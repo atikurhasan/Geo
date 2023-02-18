@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>geometry genius</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+   
+
+</head>
+<body>
+    <header>
+        <section class="bg-sky-100 flex justify-between py-3 px-6">
+            <div>
+                <h2 class="text-4xl font-bold">Interactive</h2>
+                <h4 class="text-2xl font-normal">Geometry Genius</h4>
+            </div>
+            <div class="text-center my-auto">
+                <button class="text-xl bg-sky-500 py-2 px-5 rounded font-semibold text-white" id="btn-submit">Blog</button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="mt-8 flex flex-col md:flex-row px-8">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:w-[70%] w-full mb-3">
+            <!-- triangle -->
+            <div class="border-2 rounded p-3 text-center flex flex-col justify-between" id="card-triangle">
+                <img class="mx-auto " src="./images/triangle.png" alt="">
+                <div>
+                    <h2 class="text-2xl font-bold mt-4">Triangle</h2>
+                <h4 class="text-xl font-normal my-2">Area (A) = 0.5 * b * h</h4>
+                <div>
+                    <input class="bg-slate-300 w-1/3 px-3" type="text" name="" id="input-b" placeholder="b"> cm
+                    <input class="bg-slate-300 w-1/3 px-3" type="text" name="" id="input-h" placeholder="h"> cm
+                </div>
+                <button class="text-white font-semibold text-center py-3  mt-4 bg-sky-500 rounded w-full" id="btn-calculate-triangle">Calculate</button>
+                </div>
+            </div>
+            <!-- rectangle -->
+            <div class="border-2 rounded p-3 text-center flex flex-col justify-between">
+                <img class="mx-auto" src="./images/rectangle.png" alt="">
+                <div>
+                    <h2 class="text-2xl font-bold mt-4">Rectangle</h2>
+                    <h4 class="text-xl font-normal my-2">Area (A) = w * l</h4>
+                    <div>
+                        <input class="bg-slate-300 w-1/3 px-3" type="text" name="" id="input-w" placeholder="w"> cm
+                        <input class="bg-slate-300 w-1/3 px-3" type="text" name="" id="input-l" placeholder="l"> cm
+                    </div>
+                    <button class="text-white font-semibold text-center py-3 mt-4 bg-sky-500 rounded w-full" id="btn-calculate-rectangle">Calculate</button>
+                </div>
+            </div>
+            <!-- parallelogram -->
+            <div class="border-2 rounded p-3 text-center flex flex-col justify-between">
+                <img class="mx-auto" src="./images/parallelogram.png" alt="">
+                <div>
+                    <h2 class="text-2xl font-bold mt-4">Parallelogram</h2>
+                <h4 class="text-xl font-normal my-2">Area (A) = b * h</h4>
+                <div>
+                    <input class="bg-slate-300 w-1/3 px-3" type="text" name="" id="input-pb" placeholder="b"> cm
+                    <input class="bg-slate-300 w-1/3 px-3" type="text" name="" id="input-ph" placeholder="h"> cm
+                </div>
+                <button class="text-white font-semibold text-center py-3 mt-4 bg-sky-500 rounded w-full" id="btn-calculate-parallelogram">Calculate</button>
+                </div>
+            </div>
+            <!-- rhombus -->
+            <div class="border-2 rounded p-3 text-center flex flex-col justify-between">
+                <img class="mx-auto" src="./images/rhombus.png" alt="">
+                <div>
+                    <h2 class="text-2xl font-bold mt-4">Rhombus</h2>
+                <h4 class="text-xl font-normal my-2">Area (A) = 0.5 * d1 * d2</h4>
+                <div>
+                    <input class="bg-slate-300 w-1/3 px-3" type="text" name="" id="input-d1" placeholder="d1"> cm
+                    <input class="bg-slate-300 w-1/3 px-3" type="text" name="" id="input-d2" placeholder="d2"> cm
+                </div>
+                <button class="text-white font-semibold text-center py-3 mt-4 bg-sky-500 rounded w-full" id="btn-calculate-rhombus">Calculate</button>
+                </div>
+            </div>
+            <!-- pentagon -->
+            <div class="border-2 rounded p-3 text-center flex flex-col justify-between">
+                <img class="mx-auto" src="./images/pentagon.png" alt="">
+                <div>
+                    <h2 class="text-2xl font-bold mt-4">Pentagon</h2>
+                    <h4 class="text-xl font-normal my-2">Area (A) = 0.5 * p * b</h4>
+                    <div>
+                        <input class="bg-slate-300 w-1/3 px-3" type="text" name="" id="input-penP" placeholder="p"> cm
+                        <input class="bg-slate-300 w-1/3 px-3" type="text" name="" id="input-penB" placeholder="b"> cm
+                    </div>
+                    <button class="text-white font-semibold text-center py-3 mt-4 bg-sky-500 rounded w-full" id="btn-calculate-pentagon">Calculate</button>
+                </div>
+            </div>
+            <!-- ellips -->
+            <div class="border-2 rounded p-3 text-center flex flex-col justify-between">
+                <img class="mx-auto" src="./images/ellipse.png" alt="">
+                <div>
+                    <h2 class="text-2xl font-bold mt-4">Ellips</h2>
+                    <h4 class="text-xl font-normal my-2">Area (A) = πab </h4>
+                    <div>
+                        <input class="bg-slate-300 w-1/3 px-3" type="text" name="" id="input-ea" placeholder="a"> cm
+                        <input class="bg-slate-300 w-1/3 px-3" type="text" name="" id="input-eb" placeholder="b"> cm
+                    </div>
+                    <button class="text-white font-semibold text-center py-3 mt-4 bg-sky-500 rounded w-full" id="btn-calculate-ellips">Calculate</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- calculation area -->
+        <div class="w-full md:w-[28%] text-center border-2 rounded p-3 mx-auto">
+            <h2 class="text-3xl "><u>Area calculation</u></h2>
+            <table class="w-full" id="table-container">
+               
+            </table>
+        </div>
+        </section>
+    </main>
+    <script src="cmn
+    "></script>
+    <script src="g
+    "></script>
+</body>
+</html>
